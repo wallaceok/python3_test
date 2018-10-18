@@ -1,0 +1,151 @@
+status: 200
+server: nginx
+content-type: text/html; charset=UTF-8
+connection: keep-alive
+vary: Accept-Encoding
+cache-control: no-cache, private
+date: Sat, 09 Jun 2018 02:57:10 GMT
+x-clockwork-id: 1528513030-7785-613133442
+x-clockwork-version: 2.2.5
+server-timing: app; dur=109.85112190247; desc="Application", timeline-event-total; dur=112.30802536011; desc="Total execution time.", timeline-event-initialisation; dur=44.529914855957; desc="Application initialisation.", timeline-event-boot; dur=41.942834854126; desc="Framework booting.", timeline-event-run; dur=67.777872085571; desc="Framework running."
+set-cookie: XSRF-TOKEN=eyJpdiI6IjlxbVwvYk5XUG9uaTJtWDNGU3NOR1V3PT0iLCJ2YWx1ZSI6ImV1QWJvTytZM1wvRDZkeE1ER1RyUlc2N3htZ09nOW9pQUdzd2ozNDlYcG1CaVNzeHhTZXJIUitVUHp4bjRKOGlDZms5Zzg3dG5GMDg3V2dIN2dLd2dqZz09IiwibWFjIjoiMzRjMDFhNTAxNjNhOWJmNmQ5NDRlMzQ3NjY2MGY5OWFiNmZmYmJmYmJiMjk0N2Q3MWI4MGE3ODBmZDI0ZTE1NiJ9; expires=Sat, 09-Jun-2018 03:57:10 GMT; Max-Age=3600; path=/, fangxin_session=eyJpdiI6IlBkUEdDbFVJUmluamRvTjN2WHlFZGc9PSIsInZhbHVlIjoiY05YWVp1OVRFYmJiUlBxbVwvWG12cExDdE1VUU04M3AzMngwVUl3OGMzazEzRVRxTElRN2ttT2tqbkFNK01NaWg5V1JvbU9vSmh5TE5CTVY0M2tuenRnPT0iLCJtYWMiOiJhMjcxYmI3NDkxZjViZWMzZTBmZTE4ODdhYzMwNWNkNjI4N2FlM2JhMDEzM2IzZGUyZThmZDFiZjk2Y2NjMTM3In0%3D; path=/; httponly
+content-length: 4695
+-content-encoding: gzip
+content-location: http://app-member.fx.com/login
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="csrf-token" content="b5RMvsMXj2byyp5BJvTFZYLkz3AIJXx5uRMT5vuJ">
+    <title>北京房信网络科技有限责任公司管理系统</title>
+    <link href="http://app-member.fx.com/css/classic.css?v=2.8.7.5" rel="stylesheet">
+    <link href="http://app-member.fx.com/plugins/animate/animate.css?v=2.8.7.5" rel="stylesheet">
+</head>
+<body class="gray-bg">
+<div class="erp-login-box">
+    <div class="erp-login classic">
+        <div class="erp-login-box">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="erp-login-box-top">
+                <a href="" class="erp-login-box-top-brand">
+                                            <span class="icon-total erp-login-box-top-brand-logo"></span>
+                                    </a>
+            </div>
+            <p class="erp-login-box-title">Welcome <span>back!</span></p>
+            <div class="erp-login-box-form">
+                <p class="text-center" style="color: red;margin-bottom: 25px;">
+                    
+                </p>
+                <form method="POST" action="http://app-member.fx.com/login">
+                    <input type="hidden" name="_token" value="b5RMvsMXj2byyp5BJvTFZYLkz3AIJXx5uRMT5vuJ">
+                    <div class="form-group has-feedback">
+                        
+                        
+                        <input id="mobile" class="form-control" name="mobile" type="text" value=""
+                               placeholder="请输入手机号"/>
+                        <i class="form-control-feedback icon-total icon-username"></i>
+                                            </div>
+                    <div class="form-group has-feedback">
+                        
+                        
+                        <input id="password" class="form-control" type="password" name="password" placeholder="请输入密码"
+                               autocomplete="off"/>
+                        <i class="form-control-feedback icon-total icon-password"></i>
+                                            </div>
+                    
+                    
+                    
+                    
+                    
+                    
+
+                    
+                    <button type="submit" class="btn btn-lg btn-block">登录</button>
+                    <p class="forgetword text-center"><a href="http://app-member.fx.com/password/reset">忘记密码？</a></p>
+                    
+
+                    
+                    <p class="login-copy text-center">北京房信网络科技有限责任公司 版权所有 <span class="copyfont">&copy;</span>2016</p>
+                </form>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </div>
+</div>
+
+<script type="text/javascript" src="/plugins/jquery/jquery-1.11.3.min.js"></script>
+
+
+<script type="application/javascript">
+    
+    //    $(document).snowfall('clear');
+    //    $(document).snowfall({
+    //
+    //        image: "/img/snow/ParticleSmoke.png",
+    //
+    //        flakeCount:100,
+    //
+    //        minSize: 5,
+    //
+    //        maxSize: 22
+    //
+    //    });
+
+    //元旦、新年灯笼摆动
+    $(document).ready(function () {
+      // 勿删 -- 开始
+      var attrAction = $('form').attr('action') + '?width=' + window.screen.width + '&height=' + window.screen.height;
+      $('form').attr('action', attrAction);
+      // 勿删 -- 结束
+
+      var i = 0
+      setInterval(function () {
+        if (i == 0) {
+          i = 1
+          $('.lantern1,.lantern4').removeClass('zhuan_left').addClass('zhuan_right')
+          $('.lantern2,.lantern3').addClass('zhuan_left').removeClass('zhuan_right')
+        } else {
+          i = 0
+          $('.lantern1,.lantern4').addClass('zhuan_left').removeClass('zhuan_right')
+          $('.lantern2,.lantern3').removeClass('zhuan_left').addClass('zhuan_right')
+        }
+      }, 1000)
+    })
+
+    //其他
+    //    (function (win) {
+    //        var doc       = win.document, clearPassword;
+    //        clearPassword = function () {
+    //            document.getElementById('mobile').value = "";
+    //            document.getElementById('mobile').focus();
+    //        };
+    //        if (!doc.addEventListener) return;
+    //        doc.addEventListener('DOMContentLoaded', clearPassword, false);
+    //    })(window);
+</script>
+</body>
+</html>
