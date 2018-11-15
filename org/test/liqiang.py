@@ -1,5 +1,8 @@
 import json
 
+import jsonpath
+import json
+
 data = json.dumps({
 "code":"40000",
 "info":"success",
@@ -307,18 +310,28 @@ data = json.dumps({
 })
 
 
-print(type(data))
+data2 = json.dumps({'code': '40000', 'info': 'success', 'resobj': {'send': None, 'reson': None, 'addMoney': None, 'functionmap': {'auditstatus': '-1', 'soldier': False, 'tiyan': True, 'noagree': False, 'viprenewstate': '1', 'aliqrcode': '', 'haspaypassword': False, 'wxqrcode': '', 'active_11_appoint': False}, 'id': '8267570e270847078fd99187cff99c', 'createtime': '2018-11-12 15:53:35', 'deletestate': '0', 'emailstate': '0', 'account': '13523715133', 'password': '', 'username': '真实', 'phone': '13523715133', 'sex': '1', 'email': None, 'age': None, 'address': None, 'authstate': '1', 'headimgurl': None, 'lastsignintime': None, 'signinday': None, 'idCardNo': None, 'idcardnegative': '', 'idcardpositive': '', 'idcardname': None, 'idcardauditstate': '0', 'paypassword': '', 'money': 0.0, 'vipendtime': '5', 'vipstate': '2', 'wxid': None, 'qqid': None, 'wbid': None, 'grade': 'vip学员', 'upgrade': 'vip学员', 'parentcode': '4fTvTe', 'usercode': 'dFFMmJ', 'currentnum': '4', 'partnertype': '1', 'score': 0, 'gnum': 1, 'hnum': 1, 'level': 0, 'reason': '', 'state': 0, 'token': '9cffe20ba13d4ad98f07270e62678661', 'groupbuylevel': 0, 'groupbuycount': 1, 'usertype': '1', 'childcount': 0, 'count': None, 'ismicro': 1, 'manifesto': None, 'ishero': None, 'isGroupBuyLeader': 0, 'isentpuser': '0', 'qb': 0.0, 'enterpriseid': None, 'departmentid': None, 'viprenewtime': None, 'viprenewcount': 0, 'iconid': None, 'iconname': None, 'partner': 0, 'birthday': '1983-07-02', 'province': '河南省', 'city': '郑州市', 'county': '金水区', 'contractendtime': None, 'proxyconfigid': None, 'contractstate': 1, 'proxyaddress': None, 'arrearage': 0, 'arrearagemoney': 0.0, 'wxqrcode': '', 'aliqrcode': ''}, 'otherResult': None})
+
+
+print(type(data2))
 #result = [(item.get('message')) for item in data['resobj']['rows'] ]
 
-data1 = json.loads(data)
+data1 = json.loads(data2)
 print(type(data1))
 
-print(type(data1['resobj']))
+print(data1['resobj']['id'])
+print(data1['resobj']['token'])
+
+#token = jsonpath.jsonpath(data1['resobj'],'$.token')
+
+#print(token)
 
 #print(data1['resobj']['rows'])
-
+'''
 for item in data1['resobj']['rows']:
     print(type(item))
 
 result = [(item.get('name','NA'),item.get('appimgurl2','NA')) for item in data1['resobj']['rows'] ]
 print(result)
+
+'''
